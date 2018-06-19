@@ -14,6 +14,8 @@ public class BeanDefinition {
 	/**
 	 * bean的类型
 	 * 根据其 类型 可以生成一个类实例，然后可以把 属性 注入进去。
+	 *
+	 * 问题：既然已经存储了bean的实例，为什么不用bean.getClass的方式，而要单独起一个成员变量？
 	 */
 	private Class beanClass;
 	
@@ -29,7 +31,6 @@ public class BeanDefinition {
 	private PropertyValues propertyValues = new PropertyValues();
 	
 	public BeanDefinition() { }
-
 	
 	public Object getBean() {
 		return bean;

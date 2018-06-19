@@ -138,6 +138,5 @@ public class AbstractBeanFactory implements BeanFactory{
 	public void addBeanPostProcessor(BeanPostProcessor beanPostProcessor) throws Exception {
 		this.beanPostProcessors.add(beanPostProcessor);
 	}
-	
-	
+
 }
