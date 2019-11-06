@@ -12,17 +12,17 @@
     </bean>
 
     <bean id="helloWorldService" class="us.codecraft.tinyioc.HelloWorldServiceImpl">
-        <property name="text" value="Hello World!"></property>
-        <property name="outputService" ref="outputService"></property>
+        <property name="text" value="Hello World!"/>
+        <property name="outputService" ref="outputService"/>
     </bean>
 
-    <bean id="autoProxyCreator" class="us.codecraft.tinyioc.aop.AspectJAwareAdvisorAutoProxyCreator"></bean>
+    <bean id="autoProxyCreator" class="us.codecraft.tinyioc.aop.AspectJAwareAdvisorAutoProxyCreator"/>
 
-    <bean id="timeInterceptor" class="us.codecraft.tinyioc.aop.TimerInterceptor"></bean>
+    <bean id="timeInterceptor" class="us.codecraft.tinyioc.aop.TimerInterceptor"/>
 
     <bean id="aspectjAspect" class="us.codecraft.tinyioc.aop.AspectJExpressionPointcutAdvisor">
-        <property name="advice" ref="timeInterceptor"></property>
-        <property name="expression" value="execution(* us.codecraft.tinyioc.*.*(..))"></property>
+        <property name="advice" ref="timeInterceptor"/>
+        <property name="expression" value="execution(* us.codecraft.tinyioc.*.*(..))"/>
     </bean>
 
 </beans>
