@@ -1,4 +1,4 @@
-package us.codecraft.tinyioc;
+package us.codecraft.tinyioc.beans;
 
 /**
  * @author yihua.huang@dianping.com

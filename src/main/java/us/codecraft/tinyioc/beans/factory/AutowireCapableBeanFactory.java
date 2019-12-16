@@ -1,6 +1,6 @@
 package us.codecraft.tinyioc.beans.factory;
 
-import us.codecraft.tinyioc.BeanReference;
+import us.codecraft.tinyioc.beans.BeanReference;
 import us.codecraft.tinyioc.aop.BeanFactoryAware;
 import us.codecraft.tinyioc.beans.BeanDefinition;
 import us.codecraft.tinyioc.beans.PropertyValue;

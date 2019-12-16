@@ -4,7 +4,7 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
-import us.codecraft.tinyioc.BeanReference;
+import us.codecraft.tinyioc.beans.BeanReference;
 import us.codecraft.tinyioc.beans.AbstractBeanDefinitionReader;
 import us.codecraft.tinyioc.beans.BeanDefinition;
 import us.codecraft.tinyioc.beans.PropertyValue;
