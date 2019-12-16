@@ -26,10 +26,6 @@ public class XmlBeanDefinitionReader extends AbstractBeanDefinitionReader {
 	@Override
 	public void loadBeanDefinitions(String location) throws Exception {
 		InputStream inputStream = getResourceLoader().getResource(location).getInputStream();
-		doLoadBeanDefinitions(inputStream);
-	}
-
-	protected void doLoadBeanDefinitions(InputStream inputStream) throws Exception {
 		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 		DocumentBuilder docBuilder = factory.newDocumentBuilder();
 		Document doc = docBuilder.parse(inputStream);
